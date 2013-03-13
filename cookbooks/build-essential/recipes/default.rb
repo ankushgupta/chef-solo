@@ -24,9 +24,12 @@ when "ubuntu","debian"
       action :install
     end
   end
-when "centos"
-  package "gcc" do
-    action :install
+
+when "centos","redhat","fedora"
+  %w{gcc gcc-c++ kernel-devel make ruby ruby-devel ruby-ri ruby-rdoc ruby-shadow automake make curl dmidecode}.each do |pkg|
+    package pkg do
+      action :install
+    end
   end
 end
 
