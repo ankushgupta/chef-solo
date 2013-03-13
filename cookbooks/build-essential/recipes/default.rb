@@ -26,7 +26,7 @@ when "ubuntu","debian"
   end
 
 when "centos","redhat","fedora"
-  %w{gcc gcc-c++ kernel-devel make ruby ruby-devel ruby-ri ruby-rdoc ruby-shadow automake make curl dmidecode}.each do |pkg|
+  %w{gcc gcc-c++ kernel-devel ruby ruby-devel ruby-ri ruby-rdoc ruby-shadow automake make curl dmidecode}.each do |pkg|
     package pkg do
       action :install
     end
