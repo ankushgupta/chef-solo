@@ -1,1 +1,1 @@
-{"run_list":["recipe[build-essential]", "recipe[yum]", "recipe[rails]", "recipe[vagrant]", "recipe[ohai]", "recipe[unicorn]", "recipe[application]"]}
+{"run_list":["recipe[build-essential]", "recipe[nginx]", "recipe[yum]", "recipe[rails]", "recipe[vagrant]", "recipe[ohai]", "recipe[unicorn]", "recipe[application]"]}
