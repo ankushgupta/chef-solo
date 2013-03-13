@@ -1,0 +1,1 @@
+{"run_list":["recipe[apt]", "recipe[build-essential]", "recipe[application]", "recipe[mysql]", "recipe[postgresql]", recipe[ruby]" ] }
